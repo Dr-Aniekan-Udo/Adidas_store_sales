@@ -6,13 +6,13 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # read the data from excel file
-df = pd.read_excel(r"C:\Users\anibr\GITHUB HOME\streamlit_learning\Adidas.xlsx")
+df = pd.read_excel(r"Adidas.xlsx")
 #set up the page appearnace for streamlit
 st.set_page_config(layout = "wide")
 #let's write the markdown setup
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html= True)
 #let's import our image \
-image = Image.open(r'C:\Users\anibr\GITHUB HOME\streamlit_learning\adidas-logo.jpg')
+image = Image.open(r'adidas-logo.jpg')
 
 #let's create columns  where our charts will be displayed
 col1, col2 = st.columns([0.1,0.9])
